@@ -78,3 +78,8 @@ results/
 | Table 1：共享前缀组 vs 分散前缀组对照表 | task1_results.json 中的 summary 字段 |
 | Figure 1：缓存命中率对比 | summary.cache_hit_rate |
 | Figure 2：TTFT p50/p95 对比 | summary.ttft_p50, summary.ttft_p95 |
+
+
+## 七、其他
+
+shared_prefix 和 dispersed_prefix 都放在了一起。
