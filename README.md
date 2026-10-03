@@ -52,3 +52,27 @@ python3 -m sglang.launch_server \
 cd /mnt/d/Chall
 python task1_measure.py
 ```
+
+
+## 五、脚本用途
+
+| 脚本 | 用途 |
+|------|------|
+| src/target1/task1_measure.py | 任务一：测量前缀缓存效果，构造共享/分散前缀两组负载，记录指标 |
+
+
+## 六、结果目录与报告表格对应关系
+
+\`\`\`
+results/target1/
+├── shared_prefix/
+│   └── task1_results.json      ← 报告 Table 1 共享前缀组数据
+└── dispersed_prefix/
+    └── task1_results.json      ← 报告 Table 1 分散前缀组数据
+\`\`\`
+
+| 报告表格 | 数据来源 |
+|----------|----------|
+| Table 1：共享前缀组 vs 分散前缀组对照表 | task1_results.json 中的 summary 字段 |
+| Figure 1：缓存命中率对比 | summary.cache_hit_rate |
+| Figure 2：TTFT p50/p95 对比 | summary.ttft_p50, summary.ttft_p95 |
