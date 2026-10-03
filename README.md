@@ -12,7 +12,6 @@
 | Ray | 2.56.0 |
 | 模型 | Qwen/Qwen3-0.6B |
 
-> 注：本实验基于 SGLang 0.5.14，与作业要求的版本一致。
 
 ## 二、安装方法
 
@@ -21,3 +20,12 @@
 ```bash
 python3 -m venv sglang
 source sglang/bin/activate
+
+
+
+### 2. 安装依赖
+
+\`\`\`bash
+uv pip install sglang==0.5.14 ray==2.56.0
+uv pip install requests numpy
+\`\`\`
