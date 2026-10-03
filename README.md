@@ -64,11 +64,13 @@ python task1_measure.py
 ## 六、结果目录与报告表格对应关系
 
 \`\`\`
+
 results/target1/
 ├── shared_prefix/
 │   └── task1_results.json      ← 报告 Table 1 共享前缀组数据
 └── dispersed_prefix/
     └── task1_results.json      ← 报告 Table 1 分散前缀组数据
+    
 \`\`\`
 
 | 报告表格 | 数据来源 |
