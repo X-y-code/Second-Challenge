@@ -41,8 +41,6 @@ python3 -m sglang.launch_server \
   --host 0.0.0.0 \
   --port 30000 \
   --page-size 64 \
-  --attention-backend triton \
-  --disable-cuda-graph \
   --enable-cache-report
 ```
 
@@ -66,10 +64,7 @@ python task1_measure.py
 ```
 results/
 └── target1/
-    ├── shared_prefix/
-    │   └── task1_results.json      ← 报告 Table 1 共享前缀组数据
-    └── dispersed_prefix/
-        └── task1_results.json      ← 报告 Table 1 分散前缀组数据
+    └── task1_results.json
 ```
 
 
