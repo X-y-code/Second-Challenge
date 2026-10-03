@@ -25,15 +25,15 @@ source sglang/bin/activate
 
 ### 2. 安装依赖
 
-\`\`\`bash
+```bash
 uv pip install sglang==0.5.14 ray==2.56.0
 uv pip install requests numpy
-\`\`\`
+```
 
 
 ## 三、启动命令
 
-\`\`\`bash
+```bash
 source /mnt/c/Users/20798/sglang/bin/activate
 
 python3 -m sglang.launch_server \
@@ -44,11 +44,11 @@ python3 -m sglang.launch_server \
   --attention-backend triton \
   --disable-cuda-graph \
   --enable-cache-report
-\`\`\`
+```
 
 ## 四、回放命令
 
-\`\`\`bash
+```bash
 cd /mnt/d/Chall
 python task1_measure.py
-\`\`\`
+```
